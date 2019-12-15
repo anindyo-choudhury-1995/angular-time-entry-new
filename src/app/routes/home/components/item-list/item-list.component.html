@@ -1,0 +1,14 @@
+<mat-expansion-panel class="margin-m" *ngFor="let listItem of listItems, let i = index">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <span mat-line class="display-flex justify-content-space-between align-items-center">
+                <span>
+                    <div><b>{{listItem.srNumber}}</b></div>
+                    <div> {{listItem.taskType}}</div>
+                    <div>{{listItem.deliveryType}} </div>
+                </span>
+            </span>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-edit-details></app-edit-details>
+</mat-expansion-panel>
